@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: order-service
+  main:
+    allow-bean-definition-overriding: true
   data:
     mongodb:
       database: order-service_db
