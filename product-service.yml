@@ -8,9 +8,12 @@ eureka:
       healthcheck:
         enabled: true
 
+
 spring:
   application:
     name: product-service
+  main:
+    allow-bean-definition-overriding: true
   data:
     mongodb:
       database: product-service_db
