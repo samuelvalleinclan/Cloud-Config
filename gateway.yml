@@ -1,4 +1,4 @@
-eureka: #tells about the Eureka server details and its refresh time
+eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://service-discovery:9007/eureka}
@@ -23,12 +23,12 @@ spring:
           lowerCaseServiceId: true
 
       routes:
-        - id: order-service-id #Order service route declaration
+        - id: order-service-id
           uri: lb://order-service
           predicates:
-            - Path=/api/v1/orders/** #Path to access the service
+            - Path=/api/v1/orders/**
 
-        - id: product-service-id #Product service route declaration
+        - id: product-service-id
           uri: lb://product-service
           predicates:
-            - Path=/api/v1/products/** #Path to access the service
+            - Path=/api/v1/products/**
