@@ -1,5 +1,5 @@
 server:
-  port: 8095    #service port
+  port: 9005    #service port
 
 #eureka:         #tells about the Eureka server details and its refresh time
 #  client:
