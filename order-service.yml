@@ -1,12 +1,17 @@
 server:
-  port: 9005
-  
+  port: 9004
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      healthcheck:
+        enabled: true
+
 spring:
   application:
-    name: order-service
-  main:
-    allow-bean-definition-overriding: true
+    name: product-service
   data:
     mongodb:
-      database: order-service_db
+      database: product-service_db
       port: 27017
