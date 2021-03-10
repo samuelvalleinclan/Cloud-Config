@@ -1,5 +1,5 @@
 eureka:
-client:
+ client:
   serviceUrl:
     defaultZone: ${EUREKA_URI:http://localhost:9007/eureka}
 
