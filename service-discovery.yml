@@ -2,7 +2,7 @@ server:
   port: 9007
 
 eureka:
-client:
+ client:
   registerWithEureka: false
   fetchRegistry: false
 server:
